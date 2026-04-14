@@ -122,31 +122,29 @@
         </div>
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-          
-            <img src="" alt="Image of your project" class="img-fluid">
-          
+
+            <img src="images/project-3-elevator/uml.png" alt="UML class diagram for the Elevator Simulator" class="img-fluid">
+
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
-              <h3>Project Title</h3>
+              <h3>Project 3: Elevator Simulator</h3>
               <p>
-               Motivation of the project
+                The Elevator Simulator is a model of a multi story multi elevator building that serves passenger requests over time ticks. We designed and implemented it to practice TDD, the four pillars of OOP, and the SOLID principles in real code. Besides the code itself, this was a good experience in working in a pair and using Git branching, pull requests, and code reviews to actually collaborate on the same project.
               </p>
               <p>
-              Functional requirements/what the project does
+                <strong>What it does:</strong> The simulator takes a building size from the command line number of floors, a scheduler type, how many of each elevator type to add, and a CSV file of calls describing where each passenger is starting and where they want to go. On each round the scheduler assigns at most one call to an elevator, and then each elevator moves one floor toward completing its assigned work. Every elevator type has its own acceptance policy. For example, the express elevator only services the top half of the building and the ground floor, and the freight elevator only carries one passenger at a time. When an elevator has no assigned calls it returns to the ground floor and waits. The simulation prints the state of every elevator each round and ends once every call has been answered and every elevator is back on the ground floor.
               </p>
               <p>
-              Project design
+                <strong>The design:</strong> The design leans heavily on the four pillars. We used abstraction for both Elevator and Scheduler, which define the shared behavior and leave the type-specific rules to the subclasses. Each subclass only has to implement the one rule that makes it different canAcceptCall for elevators and assignCall for schedulers. Fields like currentFloor and numOccupants are hidden behind getters, and polymorphism is what makes the scheduler work since it only talks to elevators through the abstract Elevator type. We also used the strategy pattern in the scheduler and elevator hierarchies and the template pattern in processRound() where the base class calls canAcceptCall polymorphically on the subclass.
               </p>
               <p>
-              Implementation
+                <strong>What I built:</strong> My part of the implementation was the Standard and Express elevators, the Complex scheduler, and the processRound state machine on the Elevator base class that drives everything each tick. I also helped wire up the Simulator's run loop and termination check. For every method I followed TDD write the test first, watch it fail, write just enough code to make it pass, commit that pair as one step, then move on. Doing code reviews on my partner's pull requests was one of the most valuable parts. I caught a bug in the complex scheduler where direction changes weren't being counted in the closest elevator calculation, and my partner caught a bug where passengers were being counted twice when the elevator picked up at a floor where it had already picked someone up before.
               </p>
-
-
+              <p>
+                <strong>What I learned:</strong> The biggest thing I got out of this project was how much TDD actually speeds things up. Writing the test first made me think through the edge cases before writing the real logic, and any time we refactored the tests immediately told us what broke. I also got a real feel for how small API decisions early on like whether the scheduler takes a list in its constructor or exposes an addCall method can cause big merge conflicts later if the two people on the team aren't on the same page. Clear PR reviews with specific line comments made those moments much easier to resolve.
+              </p>
             </div>
-
-            
-
           </div>
         </div>
       </div>
@@ -163,11 +161,6 @@
           </div>
         </div>
         <div class="row mb-5 text-center">
-
-
-
-          
-          
           <div class="col-md-12 text-center">
             <p class="mb-0">
               <span class="icon-mail_outline d-block h4 text-primary"></span>
