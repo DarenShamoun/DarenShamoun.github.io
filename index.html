@@ -1,281 +1,327 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-    <title>Daren Shamoun</title>
     <meta charset="utf-8">
+    <title>Daren Shamoun — Software Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Daren Shamoun — software engineer building end-to-end across full-stack web, machine learning, computer vision, and low-level systems and hardware.">
 
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/portfolio.css">
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
+  <body>
 
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
+    <!-- NAV -->
+    <nav class="nav">
+      <a href="#home" class="brand">Daren Shamoun<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#more">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="files/Daren_Shamoun_Resume.pdf" target="_blank" rel="noopener" class="btn-sm">Résumé</a>
       </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </nav>
 
-
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
+    <!-- HERO -->
+    <header class="hero" id="home">
       <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="#" class="h2 mb-0">Daren Shamoun</a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#about-section" class="nav-link">About</a></li>
-                <li><a href="#projects-section" class="nav-link">Projects</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
+        <span class="eyebrow reveal"><span class="pulse"></span> Software Engineer · San Diego, CA</span>
+        <h1 class="reveal">Daren <span class="grad-text">Shamoun</span></h1>
+        <p class="role reveal">I build software end-to-end &mdash; from silicon to the browser.</p>
+        <p class="lede reveal">
+          Computer Science graduate from the University of San Diego (Magna Cum Laude). I've shipped
+          everything from a <strong>pipelined RISC-V processor</strong> and <strong>BLE embedded systems</strong>
+          up through <strong>full-stack web apps</strong>, <strong>real-time computer vision</strong>, and
+          <strong>machine-learning pipelines</strong> &mdash; and I treat modern AI tooling as core engineering
+          infrastructure, not autocomplete.
+        </p>
+        <div class="cta-row reveal">
+          <a href="#work" class="btn btn-primary">View my work</a>
+          <a href="files/Daren_Shamoun_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Résumé &darr;</a>
+          <a href="https://github.com/DarenShamoun" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        </div>
+        <div class="metrics reveal">
+          <div class="m"><div class="n grad-text">3.83</div><div class="l">GPA · Magna Cum Laude</div></div>
+          <div class="m"><div class="n grad-text">4</div><div class="l">domains: web · CV · ML · systems</div></div>
+          <div class="m"><div class="n grad-text">50+</div><div class="l">systems shipped @ Dashbyte</div></div>
         </div>
       </div>
-
+      <div class="scroll-hint">scroll</div>
     </header>
 
-
-
-
-    <div class="site-section cta-big-image border-bottom" id="about-section">
-      <div class="container-fluid" style="padding-top: 30px; max-width: 2000px;">
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-            <img src="images/PicturesOfMyself/PictureInYokahama.jpg" alt="Daren Shamoun in Yokohama" class="img-fluid">
-
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h2>About Me</h2>
-              <p>
-                I'm Daren Shamoun, a Computer Science student at the University of San Diego and a full stack developer based in San Diego.
-              </p>
-              <p>
-                Since 2022 I've been the Full Stack Software Developer at Red Carpet Real Estate, where I built a Next.js and PostgreSQL web app from scratch to replace the paper-based workflows the company was using to manage its commercial and residential properties. Before that I co-founded Dashbyte, an IT services company where I built and deployed over 50 computer systems and shipped more than 10 custom client websites. I also finished IBM's Full Stack Software Developer Professional Certification in 2024 and spent six months as a NASA Community College Aerospace Scholar, where I worked as a computer engineer on a simulated Mars mission and competed in a robotics competition.
-              </p>
-              <p>
-                I work mostly in JavaScript, Python, Java, and C++. I'm happiest building things end-to-end from the database up through the UI and I enjoy the kind of problem-solving that sits between system design and clean code. Outside of school and work, I'm into tinkering with hardware, building PCs, and keeping up with the world.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <section class="site-section border-bottom" id="projects-section">
-      <div class="container-fluid" style="max-width: 2000px;">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Projects</h2>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-            <img src="images/RealEstateApp/RealEstateManagementSoftware.png" alt="Red Carpet Real Estate web application" class="img-fluid">
-
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3>Red Carpet Real Estate Platform</h3>
-              <p>
-                A full stack web application I built from scratch to replace the paper-based workflows a San Diego real estate company was using to manage its commercial and residential properties. It handles tenant records, rent tracking, maintenance requests, and reporting in one place so the team doesn't have to dig through file cabinets or chase down spreadsheets.
-              </p>
-              <p>
-                <strong>Stack:</strong> Next.js on the front end, Node.js and PostgreSQL on the back end, and Python with Excel scripts for automated reporting and data migration from the company's old spreadsheets.
-              </p>
-              <p>
-                <strong>What I built:</strong> I designed the database schema, built the UI from the ground up, set up the authentication and role-based access, and wrote the automation scripts that handle month-end reporting. I also handled the data migration from years of inconsistent paper and spreadsheet records into the new system.
-              </p>
-              <p>
-                <strong>What I learned:</strong> Working with a real client taught me that most of software engineering is actually understanding the business problem: what they actually need versus what they think they want. The hardest part wasn't the code, it was figuring out the right data model for messy, real-world inputs and pushing back on requirements that would have made the system worse.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-            <img src="images/project-3-elevator/uml.png" alt="UML class diagram for the Elevator Simulator" class="img-fluid">
-
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3>Project 3: Elevator Simulator</h3>
-              <p>
-                The Elevator Simulator is a model of a multi story multi elevator building that serves passenger requests over time ticks. We designed and implemented it to practice TDD, the four pillars of OOP, and the SOLID principles in real code. Besides the code itself, this was a good experience in working in a pair and using Git branching, pull requests, and code reviews to actually collaborate on the same project.
-              </p>
-              <p>
-                <strong>What it does:</strong> The simulator takes a building size from the command line number of floors, a scheduler type, how many of each elevator type to add, and a CSV file of calls describing where each passenger is starting and where they want to go. On each round the scheduler assigns at most one call to an elevator, and then each elevator moves one floor toward completing its assigned work. Every elevator type has its own acceptance policy. For example, the express elevator only services the top half of the building and the ground floor, and the freight elevator only carries one passenger at a time. When an elevator has no assigned calls it returns to the ground floor and waits. The simulation prints the state of every elevator each round and ends once every call has been answered and every elevator is back on the ground floor.
-              </p>
-              <p>
-                <strong>The design:</strong> The design leans heavily on the four pillars. We used abstraction for both Elevator and Scheduler, which define the shared behavior and leave the type-specific rules to the subclasses. Each subclass only has to implement the one rule that makes it different canAcceptCall for elevators and assignCall for schedulers. Fields like currentFloor and numOccupants are hidden behind getters, and polymorphism is what makes the scheduler work since it only talks to elevators through the abstract Elevator type. We also used the strategy pattern in the scheduler and elevator hierarchies and the template pattern in processRound() where the base class calls canAcceptCall polymorphically on the subclass.
-              </p>
-              <p>
-                <strong>What I built:</strong> My part of the implementation was the Standard and Express elevators, the Complex scheduler, and the processRound state machine on the Elevator base class that drives everything each tick. I also helped wire up the Simulator's run loop and termination check. For every method I followed TDD write the test first, watch it fail, write just enough code to make it pass, commit that pair as one step, then move on. Doing code reviews on my partner's pull requests was one of the most valuable parts of the workflow, and the back-and-forth of PR feedback was where a lot of the cleaner design decisions actually came from.
-              </p>
-              <p>
-                <strong>What I learned:</strong> The biggest thing I got out of this project was how much TDD actually speeds things up. Writing the test first made me think through the edge cases before writing the real logic, and any time we refactored the tests immediately told us what broke. I also got a real feel for how small API decisions early on like whether the scheduler takes a list in its constructor or exposes an addCall method can cause big merge conflicts later if the two people on the team aren't on the same page. Clear PR reviews with specific line comments made those moments much easier to resolve.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-            <img src="images/project-4-SolarSystemSimulator/SolarSystemSimulator.png" alt="Solar System Simulator running in the browser, showing the Sun, eight planets, and a spaceship" class="img-fluid">
-
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3>Project 4: Solar System Simulator</h3>
-              <p>
-                An interactive n-body gravity sandbox that runs in any web browser. A Java physics engine streams state over a WebSocket to a live HTML canvas. We picked it for our final project because it forced us to apply OOP, SOLID, and design patterns across three real layers (physics, networking, and a graphical client) that all have to stay decoupled.
-              </p>
-              <p>
-                <strong>What it does:</strong> The simulator boots our solar system, with the Sun plus eight planets in real circular orbits, and ticks 60 times a second, broadcasting every frame to your browser. You can pause, scrub speed, zoom, and reset. The fun part is the spaceship spawner: click and drag anywhere on the canvas and a ship launches in that direction with speed scaled to how far you pulled. From there you can slingshot around Jupiter, swing past Saturn, or watch a ship spiral into the Sun.
-              </p>
-              <p>
-                <strong>The design:</strong> Three design patterns hold it together. The factory pattern in BodyFactory and SolarSystemFactory lets the simulation ask for a list of bodies without knowing what a Sun or Earth is. The observer pattern in SimulationListener lets anything that needs to react to state changes simply subscribe. The state pattern in SimulationStatus makes illegal lifecycle transitions throw cleanly. The backend is Java 23 with Gradle and an embedded Jetty server, and the frontend is buildless vanilla JavaScript on an HTML canvas.
-              </p>
-              <p>
-                <strong>What I built:</strong> I owned the entire frontend and networking layer. On the server side that was the WebServer Jetty bootstrap, the SimulationServer that broadcasts JSON frames and routes incoming commands, and the SimulationWebSocket adapter. On the client side that was the SimulationClient with auto-reconnect, the Renderer and BodyStyles drawing pipeline, the Camera that handles zoom and projection, the ControlsBinder for the buttons, and the DragHandler for the click-and-drag spawn. I also wrote the Vector2D math library, the Simulation.tick gravity loop, and the 60Hz scheduler. Everything was written test-first, with each commit pairing one new failing test with the implementation that turned it green.
-              </p>
-              <p>
-                <strong>What I learned:</strong> Hard layer boundaries and interfaces are worth the upfront cost. The physics core doesn't know a browser exists, and the frontend doesn't know Java exists, so adding collisions or the spawner each touched exactly one layer. I also got a real appreciation for how much cleaner a team's code gets when everyone takes pull request reviews seriously and treats them as a design conversation rather than a formality.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-
-
-    <section class="site-section" id="contact-section" data-aos="fade">
+    <!-- ABOUT -->
+    <section id="about">
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Contact Me</h2>
-          </div>
+        <div class="section-head reveal">
+          <span class="kicker">About</span>
+          <h2>Engineer across the whole stack &mdash; and under it.</h2>
         </div>
-        <div class="row mb-5 text-center">
-          <div class="col-md-12 text-center">
-            <p class="mb-0">
-              <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <a href="mailto:darenshamoun@gmail.com">darenshamoun@gmail.com</a>
-            </p>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="images/PicturesOfMyself/PictureInYokahama.jpg" alt="Daren Shamoun">
           </div>
-
-          <div class="col-md-12 text-center mt-4">
-            <p class="mb-0">
-              <span class="icon-linkedin d-block h4 text-primary"></span>
-              <a href="https://www.linkedin.com/in/daren-shamoun/" target="_blank" rel="noopener">LinkedIn</a>
-            </p>
-          </div>
-
-          <div class="col-md-12 text-center mt-4">
-            <p class="mb-0">
-              <span class="icon-github d-block h4 text-primary"></span>
-              <a href="https://github.com/DarenShamoun" target="_blank" rel="noopener">GitHub</a>
-            </p>
-          </div>
-
-          <div class="col-md-12 text-center mt-4">
-            <p class="mb-0">
-              <span class="icon-graduation-cap d-block h4 text-primary"></span>
-              <a href="files/Daren_Shamoun_Resume.pdf" target="_blank">Resume</a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <footer class="site-footer">
-      <div class="container">
-
-          <div class="col-md-12 text-center">
+          <div class="about-body reveal">
             <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website builds on a template by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              I'm Daren, a software engineer based in San Diego who likes building things end-to-end &mdash;
+              from the database up through the UI, and just as happily down at the embedded and hardware layers.
             </p>
+            <p>
+              Most recently I spent my senior year as a <strong>Software Engineer Intern at BD (Becton Dickinson)</strong>,
+              where I led the development of BD-Pixie, a Bluetooth Low Energy companion system for the BD Alaris
+              infusion pump. Since 2022 I've also been the full-stack developer at <strong>Red Carpet Real Estate</strong>,
+              where I built a Next.js and PostgreSQL app from scratch to replace the company's paper-based property
+              management. Earlier I co-founded <strong>Dashbyte</strong>, an IT-services company where I deployed 50+
+              systems and shipped 10+ client sites, finished IBM's Full Stack certification, and spent six months as a
+              <strong>NASA Community College Aerospace Scholar</strong> on a simulated Mars mission.
+            </p>
+            <div class="clusters">
+              <div class="cluster"><h4>Full-Stack Web</h4><p>Next.js, React, Flask, PostgreSQL &mdash; real products for real clients.</p></div>
+              <div class="cluster"><h4>Systems &amp; Hardware</h4><p>A pipelined RISC-V CPU, a multithreaded web server, embedded BLE.</p></div>
+              <div class="cluster"><h4>Computer Vision</h4><p>Real-time MediaPipe tracking, physics, and ambient IoT.</p></div>
+              <div class="cluster"><h4>ML &amp; AI Tooling</h4><p>Leakage-safe ML pipelines; agentic AI as engineering infrastructure.</p></div>
+            </div>
+            <div class="chips">
+              <span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">Java</span>
+              <span class="chip">C++</span><span class="chip">SystemVerilog</span><span class="chip">React / Next.js</span>
+              <span class="chip">React Native</span><span class="chip">Flask</span><span class="chip">PostgreSQL</span>
+              <span class="chip">Bluetooth LE</span><span class="chip">Docker</span><span class="chip">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- FEATURED WORK -->
+    <section id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Featured Work</span>
+          <h2>Things I've built.</h2>
+          <p>A few projects that show the range &mdash; from a medical-device BLE system to an in-browser physics engine to a CPU I built from logic gates up.</p>
+        </div>
+
+        <!-- BD-Pixie -->
+        <div class="feature reveal">
+          <div class="feature-media plain pixie-card">
+            <div class="pixie-glow"></div>
+            <span class="pill"><span class="pill-dot"></span> Bluetooth Low Energy &middot; Embedded</span>
+            <div class="pixie-stat">
+              <span class="big grad-text">25&ndash;50&times;</span>
+              <span class="lbl">faster diagnostic-log transfer<br>than naive BLE reads</span>
+            </div>
+            <div class="pixie-arch">
+              <div class="layer">
+                <span class="dot"></span>
+                <div><b>React Native app</b><span>the technician's phone</span></div>
+              </div>
+              <div class="layer">
+                <span class="dot"></span>
+                <div><b>Custom BLE GATT protocol</b><span>notify-stream transfer &middot; end-to-end CRC</span></div>
+              </div>
+              <div class="layer">
+                <span class="dot"></span>
+                <div><b>Alaris infusion pump</b><span>Python BLE server &middot; embedded Linux</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-body">
+            <span class="feat-tag">BD · Becton Dickinson</span>
+            <h3>BD-Pixie &mdash; Infusion Pump Companion</h3>
+            <p class="sub">Senior capstone &amp; software-engineering internship</p>
+            <p>
+              A Bluetooth Low Energy companion system that lets biomedical technicians triage and provision BD Alaris
+              infusion pumps right at the bedside, instead of the cart-laptop-cable workflow used to service them today.
+            </p>
+            <p>
+              <strong>What I built:</strong> as the BLE, mobile, and embedded lead I authored most of the implementation
+              across three components &mdash; a React Native app, a Python BLE server, and a stripped package handed to
+              BD's firmware team for the pump's embedded chip. I designed a custom BLE GATT protocol from scratch,
+              including a notify-stream log-transfer protocol ~25&ndash;50&times; faster than naive reads with end-to-end
+              CRC integrity, and led a major React Native New-Architecture upgrade.
+            </p>
+            <div class="stack">
+              <span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">Python</span>
+              <span class="tag">Bluetooth LE / GATT</span><span class="tag">BlueZ · D-Bus</span><span class="tag">Embedded Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Red Carpet -->
+        <div class="feature flip reveal">
+          <div class="feature-media">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <img src="images/RealEstateApp/RealEstateManagementSoftware.png" alt="Red Carpet Real Estate management dashboard">
+          </div>
+          <div class="feature-body">
+            <span class="feat-tag">Full-Stack · Production</span>
+            <h3>Red Carpet Real Estate Platform</h3>
+            <p class="sub">Solo-built · in daily use since 2022</p>
+            <p>
+              A full-stack web app I built from scratch to replace the paper-based workflows a San Diego real-estate
+              company used to manage its commercial and residential properties &mdash; tenant records, rent tracking,
+              lease ledgers, arrears, and reporting in one place.
+            </p>
+            <p>
+              <strong>What I built:</strong> the database schema, the entire UI, authentication and role-based access,
+              carry-forward rent automation with PDF statements, and the Python scripts that migrated years of messy
+              spreadsheets into a clean data model. The hardest part was never the code &mdash; it was modeling
+              real-world, inconsistent inputs and pushing back on requirements that would have made the system worse.
+            </p>
+            <div class="stack">
+              <span class="tag">Next.js · React</span><span class="tag">Flask · Python</span><span class="tag">PostgreSQL</span>
+              <span class="tag">Tailwind</span><span class="tag">PDF · reporting</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solar System -->
+        <div class="feature reveal">
+          <div class="feature-media">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <img src="images/project-4-SolarSystemSimulator/SolarSystemSimulator.png" alt="Solar System Simulator running in the browser">
+          </div>
+          <div class="feature-body">
+            <span class="feat-tag">Simulation · Real-Time</span>
+            <h3>Solar System Simulator</h3>
+            <p class="sub">Object-Oriented Software Design · team of 4</p>
+            <p>
+              An interactive n-body gravity sandbox that runs in the browser. A Java physics engine ticks 60 times a
+              second and streams every frame over a WebSocket to a live HTML canvas &mdash; pause, zoom, and scrub time,
+              or click-drag to launch a spaceship and slingshot it around Jupiter.
+            </p>
+            <p>
+              <strong>What I built:</strong> I owned the entire frontend and networking layer &mdash; the Jetty
+              WebSocket server that broadcasts JSON frames, the canvas renderer and camera, the drag-to-spawn controls,
+              and the Vector2D math and 60&nbsp;Hz gravity loop. Built test-first, with hard boundaries between physics,
+              networking, and the client so each new feature touched exactly one layer.
+            </p>
+            <div class="stack">
+              <span class="tag">Java 23</span><span class="tag">Gradle</span><span class="tag">Jetty · WebSocket</span>
+              <span class="tag">Canvas · vanilla JS</span><span class="tag">TDD · SOLID</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RISC-V -->
+        <div class="feature flip reveal">
+          <div class="feature-media plain">
+            <img src="images/DigitalHardware/riscv-waveform.jpg" alt="ModelSim waveform of the pipelined RISC-V processor running a test program">
+            <div class="wave-strip" style="border:0;border-top:1px solid var(--border);border-radius:0;margin:0;">
+              <div class="cap">ModelSim simulation &mdash; the pipelined core executing a test program</div>
+            </div>
+          </div>
+          <div class="feature-body">
+            <span class="feat-tag">Computer Architecture · SystemVerilog</span>
+            <h3>Pipelined RISC-V Processor</h3>
+            <p class="sub">Digital Systems &mdash; from logic gates to a working CPU</p>
+            <p>
+              A five-stage pipelined RISC-V processor built up from first principles &mdash; full adder, Karnaugh-mapped
+              decoders, an ALU, a single-cycle core, and finally the pipelined design. It implements a complete hazard
+              unit with data forwarding, load-use stalls, and control-hazard flushing.
+            </p>
+            <p>
+              <strong>What I built:</strong> the pipelining and hazard logic, decoders, and assembly test programs,
+              verified in ModelSim and synthesized for FPGA in Quartus. Building a CPU from gates up gave me a concrete
+              feel for what actually happens beneath the code I write every day.
+            </p>
+            <div class="stack">
+              <span class="tag">SystemVerilog</span><span class="tag">ModelSim</span><span class="tag">Quartus · FPGA</span>
+              <span class="tag">RISC-V</span>
+            </div>
+            <div class="links"><a href="https://github.com/DarenShamoun/Digital-Hardware-Projects" target="_blank" rel="noopener">View on GitHub &rarr;</a></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MORE PROJECTS -->
+    <section id="more">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">More Projects</span>
+          <h2>A broader bench.</h2>
+          <p>Systems programming, computer vision, machine learning, and a few things I built just because they were fun.</p>
+        </div>
+        <div class="grid">
+
+          <div class="card reveal">
+            <span class="ico">🌐</span>
+            <h4>Computer Networks in C/C++</h4>
+            <p>A multithreaded HTTP server (thread pool + bounded buffer), a stop-and-wait reliable-transport protocol built over an unreliable socket, an iterative DNS resolver, and reverse-engineering an undocumented protocol from packet captures.</p>
+            <div class="stack"><span class="tag">C</span><span class="tag">C++</span><span class="tag">POSIX sockets</span></div>
+            <a class="gh" href="https://github.com/DarenShamoun/Networking-Projects" target="_blank" rel="noopener">GitHub &rarr;</a>
           </div>
 
+          <div class="card reveal">
+            <span class="ico">👁️</span>
+            <h4>Real-Time Computer Vision</h4>
+            <p>Two interactive MediaPipe projects: an AR filter that tracks both hands and lets a physics-simulated basketball bounce off your fingers, and a "calm-tech" assistant that scores your posture and eases every Philips Hue light in the room from white to red as you slouch.</p>
+            <div class="stack"><span class="tag">Python</span><span class="tag">MediaPipe</span><span class="tag">OpenCV</span><span class="tag">pymunk</span><span class="tag">Philips Hue</span></div>
+          </div>
 
+          <div class="card reveal">
+            <span class="ico">🛡️</span>
+            <h4>PopGuard</h4>
+            <p>A Manifest V3 Chrome extension that kills pop-ups and popunders before they open by overriding <code>window.open</code> in the page's own context, and quietly hides from ad-block detectors. Also lazily opens huge bookmark folders and auto-translates foreign pages in incognito.</p>
+            <div class="stack"><span class="tag">JavaScript</span><span class="tag">Chrome MV3</span><span class="tag">Service Workers</span></div>
+          </div>
+
+          <div class="card reveal">
+            <span class="ico">🏈</span>
+            <h4>NFL Combine ML</h4>
+            <p>A machine-learning pipeline predicting NFL career success from scouting-combine measurements. The focus is a rigorous, leakage-safe workflow &mdash; data-derived success tiers, with imputation, scaling, and resampling all fit inside cross-validation folds behind an explicit leakage audit.</p>
+            <div class="stack"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">pandas</span><span class="tag">imbalanced-learn</span></div>
+          </div>
+
+          <div class="card reveal">
+            <span class="ico">🛗</span>
+            <h4>Elevator Simulator</h4>
+            <p>A multi-elevator dispatch simulation built to practice OOP and SOLID: a polymorphic elevator hierarchy (standard, express, freight, penthouse) with pluggable scheduling strategies, developed test-first with a full JUnit suite. A pair project.</p>
+            <div class="stack"><span class="tag">Java</span><span class="tag">JUnit · TDD</span><span class="tag">Design Patterns</span></div>
+          </div>
+
+          <div class="card reveal">
+            <span class="ico">🤖</span>
+            <h4>Dashbyte AI</h4>
+            <p>An early (2023) web app for my IT-services company with a GPT-3 chat assistant embedded across every page, backed by Redux-persisted conversation state &mdash; built well before AI chat interfaces were common.</p>
+            <div class="stack"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Redux</span><span class="tag">OpenAI API</span></div>
+            <a class="gh" href="https://github.com/DarenShamoun/dashbyte-ai" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="reveal">
+          <span class="kicker">Contact</span>
+          <h2>Let's build something.</h2>
+          <p>I'm open to software-engineering roles and interesting problems. The fastest way to reach me is email.</p>
+          <div class="contact-links">
+            <a href="mailto:darenshamoun@gmail.com"><span class="icon-mail_outline"></span> darenshamoun@gmail.com</a>
+            <a href="https://www.linkedin.com/in/daren-shamoun/" target="_blank" rel="noopener"><span class="icon-linkedin"></span> LinkedIn</a>
+            <a href="https://github.com/DarenShamoun" target="_blank" rel="noopener"><span class="icon-github"></span> GitHub</a>
+            <a href="files/Daren_Shamoun_Resume.pdf" target="_blank" rel="noopener"><span class="icon-graduation-cap"></span> Résumé</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        &copy; <span id="year">2026</span> Daren Shamoun · Built from scratch · <a href="https://github.com/DarenShamoun/DarenShamoun.github.io" target="_blank" rel="noopener">Source on GitHub</a>
       </div>
     </footer>
 
-  </div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script src="js/collapsable.js"></script>
-
-
-  <script src="js/main.js"></script>
-
+    <script src="js/portfolio.js"></script>
   </body>
 </html>
