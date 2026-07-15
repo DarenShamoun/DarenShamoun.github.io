@@ -106,34 +106,20 @@
           <p>A few projects that show the range &mdash; from a medical-device BLE system to an in-browser physics engine to a CPU I built from logic gates up.</p>
         </div>
 
-        <!-- BD-Pixie -->
-        <div class="feature reveal">
-          <div class="feature-media plain pixie-card">
-            <div class="pixie-glow"></div>
-            <span class="pill"><span class="pill-dot"></span> Bluetooth Low Energy &middot; Embedded</span>
+        <!-- BD-Pixie (flagship, full-width) -->
+        <div class="feature-full reveal">
+          <div class="feature-full-head">
+            <div>
+              <span class="feat-tag">BD &middot; Becton Dickinson</span>
+              <h3>BD-Pixie &mdash; Infusion Pump Companion</h3>
+              <p class="sub">Senior capstone &amp; software-engineering internship</p>
+            </div>
             <div class="pixie-stat">
               <span class="big grad-text">25&ndash;50&times;</span>
-              <span class="lbl">faster diagnostic-log transfer<br>than naive BLE reads</span>
-            </div>
-            <div class="pixie-arch">
-              <div class="layer">
-                <span class="dot"></span>
-                <div><b>React Native app</b><span>the technician's phone</span></div>
-              </div>
-              <div class="layer">
-                <span class="dot"></span>
-                <div><b>Custom BLE GATT protocol</b><span>notify-stream transfer &middot; end-to-end CRC</span></div>
-              </div>
-              <div class="layer">
-                <span class="dot"></span>
-                <div><b>Alaris infusion pump</b><span>Python BLE server &middot; embedded Linux</span></div>
-              </div>
+              <span class="lbl">faster diagnostic-log<br>transfer than naive BLE reads</span>
             </div>
           </div>
-          <div class="feature-body">
-            <span class="feat-tag">BD · Becton Dickinson</span>
-            <h3>BD-Pixie &mdash; Infusion Pump Companion</h3>
-            <p class="sub">Senior capstone &amp; software-engineering internship</p>
+          <div class="feature-full-body">
             <p>
               A Bluetooth Low Energy companion system that lets biomedical technicians triage and provision BD Alaris
               infusion pumps right at the bedside, instead of the cart-laptop-cable workflow used to service them today.
@@ -145,10 +131,14 @@
               including a notify-stream log-transfer protocol ~25&ndash;50&times; faster than naive reads with end-to-end
               CRC integrity, and led a major React Native New-Architecture upgrade.
             </p>
-            <div class="stack">
-              <span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">Python</span>
-              <span class="tag">Bluetooth LE / GATT</span><span class="tag">BlueZ · D-Bus</span><span class="tag">Embedded Linux</span>
-            </div>
+          </div>
+          <div class="pixie-diagram">
+            <img src="images/BDPixie/poster.jpg" alt="BD-Pixie capstone expo poster: 'Taking the Workstation Out of Hospital Equipment Servicing' — problem, product, system architecture, before/after, and the CS challenges we solved">
+          </div>
+          <p class="pixie-cap">Our capstone expo poster &mdash; presented at the USD Shiley-Marcos Senior Design Expo, sponsored by BD.</p>
+          <div class="stack" style="margin-top: 22px;">
+            <span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">Python</span>
+            <span class="tag">Bluetooth LE / GATT</span><span class="tag">BlueZ &middot; D-Bus</span><span class="tag">Embedded Linux</span>
           </div>
         </div>
 
