@@ -35,4 +35,35 @@
   // dynamic year
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
+
+  // image lightbox (click to enlarge)
+  var lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.setAttribute('role', 'dialog');
+  lb.setAttribute('aria-modal', 'true');
+  lb.innerHTML = '<button class="lightbox-close" aria-label="Close preview">&times;</button>' +
+                 '<img alt="">' +
+                 '<div class="lightbox-hint">click anywhere or press Esc to close</div>';
+  document.body.appendChild(lb);
+  var lbImg = lb.querySelector('img');
+  var lbClose = lb.querySelector('.lightbox-close');
+
+  function openLb(src, alt) {
+    lbImg.setAttribute('src', src);
+    lbImg.setAttribute('alt', alt || '');
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLb() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  lb.addEventListener('click', closeLb);
+  lbImg.addEventListener('click', function (e) { e.stopPropagation(); }); // keep open when clicking the image
+  lbClose.addEventListener('click', function (e) { e.stopPropagation(); closeLb(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+
+  document.querySelectorAll('.feature-media img, .pixie-diagram img, .about-photo img').forEach(function (img) {
+    img.addEventListener('click', function () { openLb(img.getAttribute('src'), img.getAttribute('alt')); });
+  });
 })();
